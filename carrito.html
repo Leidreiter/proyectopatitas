@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de donaciones. Completa tu contribución.">
+    <meta name="keywords" content="donaciones, ayuda, caridad, solidaridad">
+    <title>Carrito de Donaciones - Portal de Donaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CDN Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+</head>
+<body data-page="carrito">
+    <!-- Header se cargará dinámicamente -->
+
+    <main class="cart-page">
+        <h1>Resumen de tu Donación</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+                <!-- Los items se cargarán dinámicamente -->
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Total a Donar</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Procesamiento:</span>
+                    <span id="shipping">No aplica</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0,00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Confirmar Donación</button>
+            </div>
+        </div>
+
+        <div id="checkoutForm" class="checkout-form hidden">
+            <h2>Datos del Donante</h2>
+            <p style="color: #64748b; margin-bottom: 1.5rem;">
+                Completa tus datos para que podamos enviarte el recibo fiscal y mantenerte informado sobre el impacto de tu donación.
+            </p>
+            
+            <form id="shippingForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #64748b; font-size: 1.1rem;">
+                    Dirección (Opcional - Solo para recibir materiales informativos)
+                </h3>
+                
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                </div>
+                
+                <div class="form-group">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="provincia" name="provincia">
+                </div>
+                
+                <div class="form-group">
+                    <label for="codigoPostal">Código Postal</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal">
+                </div>
+                
+                <div class="form-group">
+                    <label for="notas">Mensaje o dedicatoria (opcional)</label>
+                    <textarea id="notas" name="notas" rows="3" placeholder="Puedes dejar un mensaje de apoyo o dedicar tu donación a alguien especial"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Confirmar y Donar por WhatsApp</button>
+                
+                <p style="text-align: center; color: #64748b; font-size: 0.9rem; margin-top: 1rem;">
+                    <i class="fa-solid fa-lock"></i> Tus datos están seguros y solo se usan para procesar tu donación
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer se cargará dinámicamente -->
+
+    <script src="js/template.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

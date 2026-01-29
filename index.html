@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de donaciones SOS Animal. Ayuda a salvar vidas de animales en situación de abandono. Dona hoy y marca la diferencia.">
+    <meta name="keywords" content="donaciones, ayuda, caridad, solidaridad">
+    <title>SOS Animal, Portal de donaciones - Juntos Hacemos la Diferencia</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-page="inicio">
+    <!-- Header se cargará dinámicamente -->
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="cont1200 grid">
+                    <h1>Tu ayuda hoy puede salvar una vida.</h1>
+                    <p>Cada donación nos permite rescatar, curar y dar una segunda oportunidad a animales en situación de abandono.</p>
+                </div>
+            </div>
+        </section> 
+
+        <div id="tienda"></div>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="search" id="searchInput" class="search-input" placeholder="Buscar causas..."
+                    aria-label="Buscar causas">
+                <button class="clear-search" id="clearSearch" aria-label="Limpiar búsqueda">✕</button>
+            </div>
+            <p class="search-results" id="searchResults"></p>
+        </section>
+
+        <!-- Resultados de búsqueda -->
+        <section id="productos" class="products-section">
+            <div class="products-grid" id="productsGrid">
+                <!-- Los resultados se cargarán aquí -->
+            </div>
+
+            <div class="no-results" id="noResults">
+                <p>No se encontraron causas que coincidan con tu búsqueda</p>
+                <button class="btn-primary" onclick="limpiarBusqueda()">Ver todas las causas</button>
+            </div>
+        </section>
+
+        <!-- Sección de Educación -->
+        <section class="category-section" id="cuadros-section">
+            <div class="products-grid" id="gridCat1">
+                <!-- Causas de educación -->
+            </div>
+        </section>
+
+       
+    </main>
+
+    <section class="iconos-pie">
+        <div class="iconos cont1200">
+            <div class="icono">
+                <img loading="lazy" src="img/icon01.png" alt="Métodos de pago seguros">
+                <h3>Utilizamos Mercado Pago</h3>
+                <p>Para procesar las donaciones de forma segura. Cada aporte se gestiona a través de una plataforma confiable y ampliamente utilizada en Argentina.</p>
+            </div>
+            <div class="icono">
+                <img loading="lazy" src="img/icon02.png" alt="Alcance nacional">
+                <h3>Donaciones con impacto real</h3>
+                <p>Cada donación se destina a cubrir necesidades concretas del rescate: traslados, atención veterinaria, alimento, locación y gastos operativos esenciales.</p>
+            </div>
+            <div class="icono">
+                <img loading="lazy" src="img/icon03.png" alt="Transparencia total">
+                <h3>Claridad en el uso de los recursos</h3>
+                <p>Trabajamos con responsabilidad y compromiso para que cada aporte tenga un impacto directo en el bienestar de los animales rescatados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <h2>¿Tienes Dudas?</h2>
+        <p>Contáctanos por WhatsApp y te ayudaremos a elegir la mejor forma de colaborar</p>
+        <a href="https://wa.me/+5493543586985" class="whatsapp-btn" target="_blank" rel="noopener">
+            Enviar WhatsApp 
+        </a>
+    </section>
+
+    <!-- Footer se cargará dinámicamente -->
+
+    <script src="js/template.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/productos-categorias.js"></script>
+    <script src="js/hero-slider.js"></script>
+</body>
+
+</html>
