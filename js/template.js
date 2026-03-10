@@ -8,8 +8,6 @@ function renderHeader(activePage = '') {
         <div class="redes">
             <div class="cont1200">
                 <a href="https://www.facebook.com/p/S-O-S-Animal-100068584230731/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <!--<a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>-->
             </div>
         </div>
         <nav class="navbar">
@@ -18,7 +16,7 @@ function renderHeader(activePage = '') {
                 <a href="index.html" class="logo">Mi Tienda</a>
                 -->
                 <a href="index.html" class="logo-link">
-                    <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+                    <img src="img/logo.svg" alt="Logo proyecto patitas" class="logo">
                 </a>
 
                 <button class="menu-toggle" aria-label="Abrir menú de navegación">

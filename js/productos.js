@@ -71,9 +71,9 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Donación para Locación y otros gastos",
+        nombre: "Donación para Locación, guarderías y hogares provisorios",
         descripcion: "Ayudás a sostener los espacios donde los animales se recuperan.",
-        descripcionDetallada: "Los animales rescatados necesitan un lugar seguro donde recuperarse. Esta donación contribuye a cubrir gastos de alquiler, mantenimiento, servicios y acondicionamiento de los espacios que funcionan como refugio o punto de tránsito.",
+        descripcionDetallada: "Los animales rescatados necesitan un lugar seguro donde recuperarse. Esta donación contribuye a cubrir gastos de alquiler, mantenimiento, servicios, compramos cuchas de madera y acondicionamiento de los espacios que funcionan como refugio o punto de tránsito.",
         precioSugerido: 6000,
         imagen: "img/donaciones/locación.png",
         galeria: [
