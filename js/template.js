@@ -47,7 +47,7 @@ function renderHeader(activePage = '') {
 function renderFooter() {
     const footer = document.createElement('footer');
     footer.innerHTML = `
-        <p>&copy; 2026 SOS Animal. Todos los derechos reservados. Hecho con ♥️ por <a href="https://soymarcus.dev" target="_blank"><img src="img/devBy.svg" alt="Diseño y Desarrollo por Soy Marcus - Martin Leidreiter" class="devBy"></a></p>
+        <p>&copy; 2026 Proyecto patitas. Todos los derechos reservados. Hecho con ♥️ por <a href="https://soymarcus.dev" target="_blank"><img src="img/devBy.svg" alt="Diseño y Desarrollo por Soy Marcus - Martin Leidreiter" class="devBy"></a></p>
         <div class="whatsapp">
         <a href="https://wa.me/+5493543586985?text=Hola, quería consultar ">
             <img loading="lazy" src="img/whatsapp.png" alt="whatsapp logo">

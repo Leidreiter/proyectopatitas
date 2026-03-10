@@ -25,7 +25,7 @@ function cargarDetalleProducto() {
     }
     
     // Actualizar título de la página
-    document.title = `${producto.nombre} - SOS Animal`;
+    document.title = `${producto.nombre} - Proyecto patitas`;
     
     // Actualizar breadcrumb
     const breadcrumbProduct = document.getElementById('breadcrumbProduct');

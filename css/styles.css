@@ -1074,14 +1074,14 @@ body {
 
 /* Footer */
 footer {
-    background: white;
+    background: var(--primary-hover);
     text-align: center;
     padding: 2rem;
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 0.9rem;
 }
 
